@@ -16,7 +16,7 @@
 			}
                stage ("deploy"){
                    steps{
-                  deploy adapters: [tomcat8(credentialsId: '07863b17-3b5e-4334-97be-70aa9dc984f0', path: '', url: 'http://localhost:8080/')], contextPath: 'http://localhost:8080/', war: '**/*.war'
+                 deploy adapters: [tomcat8(credentialsId: '07863b17-3b5e-4334-97be-70aa9dc984f0', path: '', url: 'http://localhost:8080/')], contextPath: 'webaap', war: '**/*.war'
 		}
             }
          }
