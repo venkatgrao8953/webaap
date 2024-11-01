@@ -5,9 +5,9 @@
     <groupId>com.infotech.book.ticket.app</groupId>
     <artifactId>TicketBookingRestApp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
-    <name>webaap<name>
+    <name>TicketBookingRestApp</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
