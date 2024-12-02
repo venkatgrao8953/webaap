@@ -4,7 +4,7 @@ pipeline {
 	   
 	      stage("git checkout"){
 		    steps{
-			git branch: 'main', credentialsId: '07863b17-3b5e-4334-97be-70aa9dc984f0', url: 'https://github.com/venkatgrao8953/webaap.git'
+			git branch: 'main', url: 'https://github.com/venkatgrao8953/webaap.git'
 	   }
 	  }
          }
