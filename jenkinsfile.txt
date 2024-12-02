@@ -6,6 +6,11 @@ pipeline {
 			git branch: 'main', url: 'https://github.com/venkatgrao8953/webaap.git'
 	   }
 	  }
-         }
-	}
+          stage("UNIT TESTING"){
+		    steps{
+			bat "mvn test"
+   }
+  }
+ }
+}
   
