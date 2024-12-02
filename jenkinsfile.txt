@@ -16,6 +16,11 @@ pipeline {
               bat "mvn verify -DiskipUnitests"
      }
    }
+     stage("mvn build"){
+	  steps{
+            bat "mvn clean install"
+    }
+  }
  }
 }
   
