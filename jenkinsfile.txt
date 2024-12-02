@@ -4,13 +4,18 @@ pipeline {
 	    stage("git checkout"){
 		    steps{
 			git branch: 'main', url: 'https://github.com/venkatgrao8953/webaap.git'
-	   }
-	  }
-          stage("UNIT TESTING"){
-		    steps{
-			bat "mvn test"
-   }
   }
+}
+    stage("UNIT TESTING"){
+	  steps{
+              bat "mvn test"
+   } 
+  }
+ stage("Integration testing"){
+	  steps{
+              bat "mvn verify -DiskipUnitests"
+     }
+   }
  }
 }
   
