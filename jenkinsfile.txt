@@ -21,6 +21,11 @@ pipeline {
             bat "mvn clean install"
     }
   }
+    stage("grafana"){
+    steps{
+  install setup pin"
+   }
+  }
  }
 }
   
